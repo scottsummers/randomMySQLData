@@ -11,9 +11,6 @@ public class randomMySQLData{
         Connection conn = null;
         Statement stmt = null;
         try{
-            //String DB_URL = "jdbc:mysql://172.16.75.182/adm201";
-            //String USER = "admintest";
-            //String PASS = "mypass";
 
             /*
                Program Arguments:
@@ -94,7 +91,7 @@ public class randomMySQLData{
         oct2 = rnd.nextInt(254);
         oct3 = rnd.nextInt(254);
         oct4 = rnd.nextInt(254);
-        sentenceLength = rnd.nextInt(1000);
+        sentenceLength = rnd.nextInt(100);
         //intgerIP = ((16777216 * oct1) + (65536 * oct2)+ (256 * oct3) + oct4);
 
         String myData = "NULL" + ", '" + oct1 + "." + oct2 + "." + oct3 + "." + oct4 + "', '" + getRandomMessage() + "', '" + generateRandomSentence(sentenceLength) + "'";
